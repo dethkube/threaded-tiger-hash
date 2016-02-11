@@ -1,0 +1,20 @@
+# threaded-tiger-hash
+# Multi-threaded version of a Tiger Tree Hash generator
+# Author: Eric Sobel
+# Credits: smartalloc code supplied by Prof. Clint Staley and Prof. John Bellardo
+#          sboxes and tiger code supplied by Prof. John Bellardo for CPE 453
+
+This program computes the Tiger Tree hash of a variable number of files using between 1 and 1024
+threads to compute the hash of individual blocks in the hash tree for each file.
+
+To compile:
+
+$ make
+-or-
+$ make p2
+
+To run:
+
+$ ./p2 <numthreads> <file1> [<file2> ...]
+
+which will write each calculated hash to a file named <hashedfile>.tth
